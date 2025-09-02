@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>سایت دانلود فایل</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>دانلود فایل‌ها و مدیا</h1>
+    <ul>
+        {% for file in files %}
+        <li>
+            {{ file.name }} - <a href="{{ file.url }}" target="_blank">دانلود</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
