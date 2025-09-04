@@ -35,8 +35,9 @@
         <div class="overlay">
         <h1>nursing.learn</h1>
         <p>خوش آمدید</p>
-    </div>
+        </div>
     </header>
+    
 
     <nav class="navbar">
         <ul>
@@ -52,17 +53,35 @@
             
         </ul>
     </nav>
-  <body>
+    <div class="mm">
 
-    <h1>دانلود فایل‌ها و مدیا</h1>
-    <ul>
-        {% for file in files %}
-        <li>
-            {{ file.name }} -
-            <a href="https://my-file1.storage.c2.liara.space/%D8%A7%D8%B5%D9%88%D9%84%20%D9%88%20%D9%85%D9%87%D8%A7%D8%B1%D8%AA%20%D9%87%D8%A7%DB%8C%20%D9%BE%D8%B1%D8%B3%D8%AA%D8%A7%D8%B1%DB%8C%20%D8%AA%D8%A7%DB%8C%D9%84%D9%88%D8%B1.pdf"
-               target="_blank">دانلود کتاب پرستاری تیلور</a>
-        </li>
-        {% endfor %}
-    </ul>
+        <div class="slidebar-right"
+            <ul>
+                <uili>1</ui>
+                <ui>1</ui>
+                <ui>1</ui>
+                <ui>1</ui>
+                <ui>1</ui>
+                <ui>1</ui>
+                </ul>
+        </div>
+        <div class="content">
+            <h1>دانلود رابگان کتاب های پرستاری</h1>
+                <ul>
+                    {% for file in files %}
+                    <li>
+                    {{ file.name }} -
+                    <a href="https://my-file1.storage.c2.liara.space/%D8%A7%D8%B5%D9%88%D9%84%20%D9%88%20%D9%85%D9%87%D8%A7%D8%B1%D8%AA%20%D9%87%D8%A7%DB%8C%20%D9%BE%D8%B1%D8%B3%D8%AA%D8%A7%D8%B1%DB%8C%20%D8%AA%D8%A7%DB%8C%D9%84%D9%88%D8%B1.pdf"
+                         target="_blank">دانلود کتاب پرستاری تیلور</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+        </div>
+        <div class="slidebar-left">
+            <ul>
+                <ui></ui>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

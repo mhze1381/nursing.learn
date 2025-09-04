@@ -1,4 +1,17 @@
-body{
+.mm {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* ستون چپ، محتوا، ستون راست */
+    grid-template-areas: 
+        "left content right";
+    gap: 10px; /* فاصله بین ستون ها */
+}
 
-    color: red;
+.slidebar-left {
+     grid-area: left; 
+     border: 20px solid red;
+    }
+.content { grid-area: content; }
+.slidebar-right { 
+    grid-area: right;
+    border: 20px solid red;
 }
