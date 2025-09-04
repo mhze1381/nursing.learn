@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* هدر تصویری */
+.site-header img {
+    background-image: url("/static/image/mypic2.jpg");
+    background-size: cover;
+  width: 100%;
+  height: auto;
+  display: block; /* خط سفید اضافی نمیذاره */
+}
+
+/* نویگیشن بار */
+.navbar {
+  background-color: #333;
+  color: white;
+
+
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #444;
+  }
