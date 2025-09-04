@@ -8,10 +8,35 @@
 
 .slidebar-left {
      grid-area: left; 
-     border: 20px solid red;
+     border: 2px solid #FFD700;
+     background-color:#F5F5DC;
+     color: black;
+     list-style: none;
+     padding: 5px;
     }
-.content { grid-area: content; }
+.content {
+     grid-area: content;
+
+    
+    }
 .slidebar-right { 
     grid-area: right;
-    border: 20px solid red;
+     background-color:#F5F5DC;
+    color: black;
+    list-style: none;
+    padding-left: 25px;
+    padding-top:10px;
+    border-left: 1px solid #FFD700;
+    border-right: 1px solid #FFD700;
+    border-bottom: 1px solid #FFD700;
+
+
+}
+.kossher{
+    padding-top: 6px;
+    border-bottom: 1px solid #FFD700;
+    padding-bottom: 3px;
+    overflow-x: auto;                /* فعال کردن اسکرول افقی */
+    -webkit-overflow-scrolling: touch; /* اسکرول نرم برای iOS */
+    
 }

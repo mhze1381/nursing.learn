@@ -2,16 +2,13 @@ body{
   margin: 0;
   font-family: sans-serif;
 }
-
-/* هدر تصویری */
 .site-header {
-  background-image: url("/static/image/mypic2.png"); /* مسیر تصویر خودت */
- background-size: cover;
+  background-image: url("/static/image/mypic2.png");
+  background-size: cover;
   background-position: center;
   width: 100%;
-  height: 200px; /* ارتفاع هدر، می‌تونی به 100vh تغییر بدی */
+  height: clamp(150px, 35vh, 300px); /* توی موبایل کوچیک‌تر، توی دسکتاپ بلندتر */
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: white;
@@ -20,15 +17,31 @@ body{
 
 .site-header .overlay {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3); /* رنگ نیمه شفاف برای بهتر دیده شدن متن */
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 10px;
 }
 
+/* اطمینان از فیت بودن متن داخل هدر */
+.site-header h1 {
+  font-size: clamp(18px, 5vw, 36px); /* سایز متن هم ریسپانسیو */
+  margin: 0;
+}
+.site-header p {
+  font-size: clamp(12px, 3.5vw, 18px);
+  margin: 5px 0 0;
+}
+
+
+/* نویگیشن بار */
 /* نویگیشن بار */
 .navbar {
-  background-color: #333;
-  color: white;
+  background-color:#F5F5DC;
+  border: 1px solid #FFD700;
+  overflow-x: auto;       /* اسکرول افقی */
+  -webkit-overflow-scrolling: touch; /* اسکرول نرم روی موبایل */
+  justify-content: flex-end;
+  display: flex;
 }
 
 .navbar ul {
@@ -36,19 +49,22 @@ body{
   padding: 0;
   display: flex;
   list-style: none;
-  justify-content: flex-end;
+  justify-content: flex-start; /* بچسبن سمت راست/چپ */
+  flex-wrap: nowrap;           /* نذار بشکنه */
+
 }
 
 .navbar li {
-  flex: 1;
-  text-align: center;
+  flex: 0 0 auto; /* آیتم‌ها جمع نشن */
+  color: black;
 }
 
 .navbar a {
   display: block;
-  padding: 15px;
-  color: white;
+  padding: 15px 20px;
+  color: black;
   text-decoration: none;
+  white-space: nowrap; /* متن نشکنه */
 }
 
 .navbar a:hover {
