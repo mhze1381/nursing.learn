@@ -19,6 +19,7 @@
     text-align: right;
     list-style-type:circle;
     font-family: 'IranYekan', 'Vazir', sans-serif;
+    overflow:auto;   
   
     }
 .slidebar-left ul {
@@ -56,11 +57,13 @@ border-bottom: 1px solid #FFD700;
     text-align: right;
     list-style-type:circle;
     font-family: 'IranYekan', 'Vazir', sans-serif;
+    overflow:auto;   
 }    
 .kiry{
     padding-left: 2px;
     margin: 0px;
     padding-right: 2px;
+    overflow:auto;
    
 
 }
@@ -70,6 +73,7 @@ border-bottom: 1px solid #FFD700;
     padding-top: 7px;
     overflow: auto;                /* فعال کردن اسکرول افقی */
     font-size: 12x;
+    overflow:auto;
     
 
 }
