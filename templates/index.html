@@ -32,58 +32,72 @@
     <title>سایت پرستاری</title>
 </head>
 <body>
-    <header class="site-header">
-        <div class="overlay">
-        <h1>nursing.learn</h1>
-        <p>خوش آمدید</p>
-        </div>
-    </header>
+    <main>
+        <header class="site-header">
+            <div class="overlay">
+            <h1>nursing.learn</h1>
+            <p>خوش آمدید</p>
+            </div>
+        </header>
     
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">اورژانس</a></li>
-            <li><a href="#">CCU-ICU</a></li>
-            <li><a href="#">داخلی-جراحی</a></li>
-            <li><a href="#">روان</a></li>
-            <li><a href="#">سوختگی</a></li>
-            <li><a href="#">دیالیز</a></li>
-            <li><a href="#">فیزیولوژی</a></li>
-            <li><a href="#">بهداشت سلامت و جامعه</a></li>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">اورژانس</a></li>
+                <li><a href="#">CCU-ICU</a></li>
+                <li><a href="#">داخلی-جراحی</a></li>
+                <li><a href="#">روان</a></li>
+                <li><a href="#">سوختگی</a></li>
+                <li><a href="#">دیالیز</a></li>
+                <li><a href="#">فیزیولوژی</a></li>
+                <li><a href="#">بهداشت سلامت و جامعه</a></li>
 
             
-        </ul>
-    </nav>
-    <div class="mm">
-
-        <div class="slidebar-right"
-        <ul>
-            <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
-            <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
-            <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
-
-
-
-
-        </ul>
-        </div>
-        <div class="content">
-            <h1>دانلود رابگان کتاب های پرستاری</h1>
-                <ul>
-                    {% for file in files %}
-                    <li>
-                    {{ file.name }} -
-                    <a href="https://my-file1.storage.c2.liara.space/%D8%A7%D8%B5%D9%88%D9%84%20%D9%88%20%D9%85%D9%87%D8%A7%D8%B1%D8%AA%20%D9%87%D8%A7%DB%8C%20%D9%BE%D8%B1%D8%B3%D8%AA%D8%A7%D8%B1%DB%8C%20%D8%AA%D8%A7%DB%8C%D9%84%D9%88%D8%B1.pdf"
-                         target="_blank">دانلود کتاب پرستاری تیلور</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-        </div>
-        <div class="slidebar-left">
-            <ul>
-                <ui></ui>
             </ul>
-        </div>
-    </div>
+        </nav>
+            <div class="mm">
+
+                <section class="slidebar-right">
+                    <ul class="kiry">
+                        <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
+                        <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
+                        <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
+
+
+
+
+                    </ul>
+                </section>
+                <section class="content">
+                    <h1 class="attention">دانلود رایگان کتاب های پرستاری</h1>
+                    <h2 class="attention">نکته:در صورت پیدا نکردن کتاب مورد نظر با مراجعه به قسمت پایین سایت و ارتباط با ادمین ،به ادمین اطلاع دهید</h2>
+                    <ul>
+                        {% for file in files %}
+                        <li>
+                        {{ file.name }} -
+                        <a href="https://my-file1.storage.c2.liara.space/%D8%A7%D8%B5%D9%88%D9%84%20%D9%88%20%D9%85%D9%87%D8%A7%D8%B1%D8%AA%20%D9%87%D8%A7%DB%8C%20%D9%BE%D8%B1%D8%B3%D8%AA%D8%A7%D8%B1%DB%8C%20%D8%AA%D8%A7%DB%8C%D9%84%D9%88%D8%B1.pdf"
+                        target="_blank">دانلود کتاب پرستاری تیلور</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+                <section class="slidebar-left">
+                    <ul>
+                        <li>هر انچه که یک پرستار باید بداند</li>
+                        <li>معیار برادن</li>
+                        <li>معیار مورس</li>
+                    </ul>
+                </section>
+           </div>
+           <footer>
+            <ul>
+                <li>انتقادات و پیشنهادات خود را با ما در میان بگذارید</li>
+                <li class="fasele-footer">:ارتباط با ادمین</li>
+                <li class="fasele-footer">@mhze2002:telegrm</li>
+                <li class="fasele-footer">mohammad.mosan95@gmail.com:gmail</li>
+                <li></li>
+            </ul>
+           </footer>
+    </main>
 </body>
 </html>

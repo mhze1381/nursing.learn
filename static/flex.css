@@ -6,7 +6,7 @@ body{
   background-image: url("/static/image/mypic2.png");
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: auto;
   height: clamp(150px, 35vh, 300px); /* توی موبایل کوچیک‌تر، توی دسکتاپ بلندتر */
   display: flex;
   justify-content: center;
@@ -38,10 +38,11 @@ body{
 .navbar {
   background-color:#F5F5DC;
   border: 1px solid #FFD700;
-  overflow-x: auto;       /* اسکرول افقی */
-  -webkit-overflow-scrolling: touch; /* اسکرول نرم روی موبایل */
+  overflow:auto;      /* اسکرول افقی */
+ /* -webkit-overflow-scrolling: touch; /* اسکرول نرم روی موبایل */
   justify-content: flex-end;
   display: flex;
+  flex: 1;
 }
 
 .navbar ul {
@@ -49,24 +50,29 @@ body{
   padding: 0;
   display: flex;
   list-style: none;
-  justify-content: flex-start; /* بچسبن سمت راست/چپ */
+  justify-content: flex-end; /* بچسبن سمت راست/چپ */
   flex-wrap: nowrap;           /* نذار بشکنه */
+  overflow-y: auto;
+
 
 }
 
 .navbar li {
-  flex: 0 0 auto; /* آیتم‌ها جمع نشن */
+  flex: uto; /* آیتم‌ها جمع نشن */ 
   color: black;
+  
+}
+.navbar a:hover{
+  color: #F5F5DC;
 }
 
 .navbar a {
-  display: block;
-  padding: 15px 20px;
+  display: flex;
+  padding-left:10px ;
+  padding-bottom: 5px;
+  padding-top: 5px;
   color: black;
   text-decoration: none;
   white-space: nowrap; /* متن نشکنه */
-}
-
-.navbar a:hover {
-  background-color: #444;
+  flex: 1;
 }

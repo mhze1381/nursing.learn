@@ -3,40 +3,71 @@
     grid-template-columns: 1fr 3fr 1fr; /* ستون چپ، محتوا، ستون راست */
     grid-template-areas: 
         "left content right";
-    gap: 10px; /* فاصله بین ستون ها */
+    gap: 10x; /* فاصله بین ستون ها */
 }
 
 .slidebar-left {
-     grid-area: left; 
-     border: 2px solid #FFD700;
-     background-color:#F5F5DC;
-     color: black;
-     list-style: none;
-     padding: 5px;
-    }
-.content {
-     grid-area: content;
-
     
-    }
-.slidebar-right { 
-    grid-area: right;
-     background-color:#F5F5DC;
+    grid-area: left;
+    background-color:#F5F5DC;
     color: black;
-    list-style: none;
-    padding-left: 25px;
-    padding-top:10px;
+    padding-left: px;
+    padding-top:0px;
     border-left: 1px solid #FFD700;
     border-right: 1px solid #FFD700;
-    border-bottom: 1px solid #FFD700;
+    direction: rtl;
+    text-align: right;
+    list-style-type:circle;
+  
+    }
+.slidebar-left ul {
+    padding-left: 2px;
+    margin: 0px;
+    padding-right: 2px;
+   
 
+}
+.slidebar-left li{
+
+border-bottom: 1px solid #FFD700;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    overflow: auto;                /* فعال کردن اسکرول افقی */
+    font-size: 12x;
+}
+    
+
+    
+
+.content{
+    grid-area: content;
+}
+
+.slidebar-right { 
+    grid-area: right;
+    background-color:#F5F5DC;
+    color: black;
+    padding-left: px;
+    padding-top:0px;
+    border-left: 1px solid #FFD700;
+    border-right: 1px solid #FFD700;
+    direction: rtl;
+    text-align: right;
+    list-style-type:circle;
+}    
+.kiry{
+    padding-left: 2px;
+    margin: 0px;
+    padding-right: 2px;
+   
 
 }
 .kossher{
-    padding-top: 6px;
     border-bottom: 1px solid #FFD700;
-    padding-bottom: 3px;
-    overflow-x: auto;                /* فعال کردن اسکرول افقی */
-    -webkit-overflow-scrolling: touch; /* اسکرول نرم برای iOS */
+    padding-bottom: 7px;
+    padding-top: 7px;
+    overflow: auto;                /* فعال کردن اسکرول افقی */
+    font-size: 12x;
     
+
 }

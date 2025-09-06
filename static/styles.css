@@ -1,0 +1,36 @@
+.content{
+      background-color:#F5F5DC;
+      height: 510px;
+      text-align: right;
+      direction: rtl;
+    
+     
+}
+footer{
+    background-color: #F5F5DC;
+    border:1px solid #ffd700;
+    text-align: right;
+    height: auto;
+    height: 100px;
+    padding-top: 0%;
+    direction: rtl;
+
+}
+footer ul{
+    padding-top: 0px,;
+    margin: 0px;
+}
+footer li:first-child{
+    padding: 3px;
+}
+.fasele-footer{
+    padding: 1px;
+}
+.attention{
+    text-align: center;
+
+
+}
+h2{
+    font-size: 15px;
+}
