@@ -43,6 +43,7 @@ body{
   justify-content: flex-end;
   display: flex;
   flex: 1;
+  font-family: 'IranYekan', 'Vazir', sans-serif;
 }
 
 .navbar ul {

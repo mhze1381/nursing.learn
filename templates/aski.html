@@ -1,99 +1,10 @@
-
-   
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="سایت پرستاری ، آموزش ها ، مقالات تخصصی ، مراقبت های بالینی ، راهنمای دارویی و نکات کاربردی برای دانشجویان و پرستاران ، دانلود رایگان کتاب های آموزش پرستاری">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="محمد حسین زاده , Mohammad hosein zadeh">
-    <meta name="keywords" content="پرستاری ، آموزش پرستاری،مراقبت بالینی ، دارو شناسی ، نکات پرستاری ، دانلود رایگان ">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="سایت پرستاری">
-    <meta property="og:description" content="آموزش ها و مقالات تخصصی برای دانشجویان و پرستاران .">
-    <meta property="og:image" content="<img src="{{ url_for('static', filename='image/mypic.png') }}" alt="mypic">
-">
-    <meta property="og:url" content="">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="سایت پرستاری">
-    <meta name="twitter:description" content="مقالات و آموزش های پرستاری">
-    <meta name="twitter:image" content="<img src="{{ url_for('static', filename='image/mypic.png') }}" alt="mypic">
-">
-      
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=1">
-    <link rel="stylesheet" href="{{ url_for('static', filename='flex.css') }}?v=1">
-    <link rel="stylesheet" href="{{ url_for('static', filename='grid.css') }}?v=1">
-
-    <title>سایت پرستاری</title>
-</head>
-<body>
-     <main>
-        <header class="site-header">
-            <div class="overlay">
-            <h1>nursing.learn</h1>
-            <p>خوش آمدید</p>
-            </div>
-        </header>
-    
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">اورژانس</a></li>
-                <li><a href="#">CCU-ICU</a></li>
-                <li><a href="#">داخلی-جراحی</a></li>
-                <li><a href="#">روان</a></li>
-                <li><a href="#">سوختگی</a></li>
-                <li><a href="#">دیالیز</a></li>
-                <li><a href="#">فیزیولوژی</a></li>
-                <li><a href="#">بهداشت سلامت و جامعه</a></li>
-
-            
-            </ul>
-        </nav>
-            <div class="mm">
-
-                <section class="slidebar-right">
-                    <ul class="kiry">
-                        <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
-                        <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
-                        <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
-                    </ul>
-                </section>
-
-
+{%extends "Base.html"%}
+{% block content %}
 
                   
-                <section class="content">
-                   <ul>
-                    <li> hkjfhkjgh</li>
-                   </ul>
-                </section>
-
-                <section class="slidebar-left">
-                    <ul>
-                        <li>هر انچه که یک پرستار باید بداند</li>
-                        <li>معیار برادن</li>
-                        <li>معیار مورس</li>
-                    </ul>
-                </section>
-            </div>
-            <footer>
-                <ul>
-                    <li>انتقادات و پیشنهادات خود را با ما در میان بگذارید</li>
-                    <li class="fasele-footer">:ارتباط با ادمین</li>
-                    <li class="fasele-footer">@mhze2002:telegrm</li>
-                    <li class="fasele-footer">mohammad.mosan95@gmail.com:gmail</li>
-                    <li></li>
-                </ul>
-           </footer>
-    </main>
-</body>
-</html>
+                 
+                   <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facere natus iure alias eos earum, delectus nam illo sit corporis commodi quibusdam aspernatur esse. Aliquam dolor dolorum modi rerum nam!</P>
+              
+{% endblock content %}
         
-        
+           

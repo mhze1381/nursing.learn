@@ -18,6 +18,7 @@
     direction: rtl;
     text-align: right;
     list-style-type:circle;
+    font-family: 'IranYekan', 'Vazir', sans-serif;
   
     }
 .slidebar-left ul {
@@ -54,6 +55,7 @@ border-bottom: 1px solid #FFD700;
     direction: rtl;
     text-align: right;
     list-style-type:circle;
+    font-family: 'IranYekan', 'Vazir', sans-serif;
 }    
 .kiry{
     padding-left: 2px;

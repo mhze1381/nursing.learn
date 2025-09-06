@@ -1,19 +1,25 @@
 .content{
       background-color:#F5F5DC;
-      height: 510px;
+      height:min-content 500px , max-content auto;
       text-align: right;
       direction: rtl;
-    
+      font-family: 'Vazir', Tahoma, sans-serif;
+      padding-left:7px ;
+      padding-right: 7px;
+      padding-bottom: 7px;
+     
      
 }
+
 footer{
     background-color: #F5F5DC;
     border:1px solid #ffd700;
     text-align: right;
     height: auto;
-    height: 100px;
+    height: 130px;
     padding-top: 0%;
     direction: rtl;
+    font-family: 'IranYekan', 'Vazir', sans-serif;
 
 }
 footer ul{

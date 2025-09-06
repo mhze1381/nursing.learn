@@ -12,6 +12,10 @@ def index():
 def aski():
     return render_template("aski.html")
 
+@app.route("/emergency")
+def Emergency():
+    return render_template("Emergency.html")
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
