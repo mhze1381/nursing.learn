@@ -9,7 +9,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/aski")
-def OnAski():
+def aski():
     return render_template("aski.html")
 
 

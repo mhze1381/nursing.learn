@@ -1,6 +1,39 @@
-{% extends "Base.html" %}
-{% block content %}
-    <main>
+
+   
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="سایت پرستاری ، آموزش ها ، مقالات تخصصی ، مراقبت های بالینی ، راهنمای دارویی و نکات کاربردی برای دانشجویان و پرستاران ، دانلود رایگان کتاب های آموزش پرستاری">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="محمد حسین زاده , Mohammad hosein zadeh">
+    <meta name="keywords" content="پرستاری ، آموزش پرستاری،مراقبت بالینی ، دارو شناسی ، نکات پرستاری ، دانلود رایگان ">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="سایت پرستاری">
+    <meta property="og:description" content="آموزش ها و مقالات تخصصی برای دانشجویان و پرستاران .">
+    <meta property="og:image" content="<img src="{{ url_for('static', filename='image/mypic.png') }}" alt="mypic">
+">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="سایت پرستاری">
+    <meta name="twitter:description" content="مقالات و آموزش های پرستاری">
+    <meta name="twitter:image" content="<img src="{{ url_for('static', filename='image/mypic.png') }}" alt="mypic">
+">
+      
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='flex.css') }}?v=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='grid.css') }}?v=1">
+
+    <title>سایت پرستاری</title>
+</head>
+<body>
+     <main>
         <header class="site-header">
             <div class="overlay">
             <h1>nursing.learn</h1>
@@ -30,25 +63,18 @@
                         <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
                         <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
                         <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
-
-
-
-
                     </ul>
                 </section>
+
+
+
+                  
                 <section class="content">
-                    <h1 class="attention">دانلود رایگان کتاب های پرستاری</h1>
-                    <h2 class="attention">نکته:در صورت پیدا نکردن کتاب مورد نظر با مراجعه به قسمت پایین سایت و ارتباط با ادمین ،به ادمین اطلاع دهید</h2>
-                    <ul>
-                        {% for file in files %}
-                        <li>
-                        {{ file.name }} -
-                        <a href="https://my-file1.storage.c2.liara.space/%D8%A7%D8%B5%D9%88%D9%84%20%D9%88%20%D9%85%D9%87%D8%A7%D8%B1%D8%AA%20%D9%87%D8%A7%DB%8C%20%D9%BE%D8%B1%D8%B3%D8%AA%D8%A7%D8%B1%DB%8C%20%D8%AA%D8%A7%DB%8C%D9%84%D9%88%D8%B1.pdf"
-                        target="_blank">دانلود کتاب پرستاری تیلور</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
+                   <ul>
+                    <li> hkjfhkjgh</li>
+                   </ul>
                 </section>
+
                 <section class="slidebar-left">
                     <ul>
                         <li>هر انچه که یک پرستار باید بداند</li>
@@ -56,7 +82,18 @@
                         <li>معیار مورس</li>
                     </ul>
                 </section>
-           </div>
+            </div>
+            <footer>
+                <ul>
+                    <li>انتقادات و پیشنهادات خود را با ما در میان بگذارید</li>
+                    <li class="fasele-footer">:ارتباط با ادمین</li>
+                    <li class="fasele-footer">@mhze2002:telegrm</li>
+                    <li class="fasele-footer">mohammad.mosan95@gmail.com:gmail</li>
+                    <li></li>
+                </ul>
+           </footer>
     </main>
-{% endblock content %}
+</body>
+</html>
+        
            
