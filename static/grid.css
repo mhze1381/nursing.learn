@@ -6,6 +6,26 @@
     /* فاصله بین ستون ها */
 }
 
+/* وقتی عرض صفحه کمتر از 768px بشه */
+@media (max-width: 768px) {
+    .mm {
+        grid-template-columns: 1fr; /* فقط یه ستون */
+        grid-template-areas: 
+             "left"
+            "right" /* اول محتوا بعد سایدبارها */
+            "content";
+            
+
+            
+    }
+           
+    .slidebar-left,
+    .slidebar-right {
+        border: none;  /* برای خلوت‌تر شدن */
+        font-size: 14px; /* فونت بزرگ‌تر که ناخوانا نشه */
+    }
+}
+
 .slidebar-left {
     
     grid-area: left;

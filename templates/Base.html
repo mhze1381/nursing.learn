@@ -24,7 +24,8 @@
     <meta name="twitter:description" content="مقالات و آموزش های پرستاری">
     <meta name="twitter:image" content="<img src="{{ url_for('static', filename='image/mypic.png') }}" alt="mypic">
 ">
-      
+   <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+   
     <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='flex.css') }}?v=1">
@@ -75,15 +76,15 @@
 
 
 
-                <section class="content" style="width: min(auto,420px);">
+                <section class="content">
                     {% block content %}{%endblock%}
                    
                 </section>
 
                 <section class="slidebar-left">
-                    <ul>
-                        <li>هر انچه که یک پرستار باید بداند</li>
-                        <li>معیار برادن</li>
+                    <ul class="kiry">
+                        <li><a href="{{ url_for('learn')}}">هر انچه که یک پرستار باید بداند</a></li>
+                        <li><a href="{{ url_for('learn')}}">معیار برادن</a></li>
                         <li>معیار مورس</li>
                     </ul>
                 </section>
