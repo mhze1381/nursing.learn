@@ -40,3 +40,7 @@ footer li:first-child{
 h2{
     font-size: 15px;
 }
+
+.kon a{
+    text-decoration: none;
+}

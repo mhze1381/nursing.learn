@@ -13,8 +13,15 @@ def aski():
     return render_template("aski.html")
 
 @app.route("/emergency")
-def Emergency():
+def emergency():
     return render_template("Emergency.html")
+@app.route("/nezam")
+def nezam():
+    return render_template("nezam.html")
+@app.route("/learn")
+def learn():
+    return render_template("learn.html")
+
 
 
 if __name__ == "__main__":

@@ -51,7 +51,7 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="#">اورژانس</a></li>
+                <li><a href="{{ url_for('Emergency')}}">اورژانس</a></li>
                 <li><a href="#">CCU-ICU</a></li>
                 <li><a href="#">داخلی-جراحی</a></li>
                 <li><a href="#">روان</a></li>
@@ -67,16 +67,16 @@
 
                 <section class="slidebar-right">
                     <ul class="kiry">
-                        <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
-                        <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
-                        <li class="kossher">منابع آسکی علوم پزشکی زاهدان</li>
+                        <li class="kossher"><a href="{{ url_for('aski')}}">منابع آسکی علوم پزشکی زاهدان</a></li>
+                        <li class="kossher"><a href="{{ url_for('nezam')}}"> دریافت شماره نظام پرستاری</a></li>
+                        <li class="kossher"><a href="{{ url_for('learn')}}">دانلود فایل ۱۵ مطلب مهم برای کار در بالین</a></li>
                     </ul>
                 </section>
 
 
 
-                <section class="content">
-                    {% block content %}{%endblock content%}
+                <section class="content" style="width: min(auto,420px);">
+                    {% block content %}{%endblock%}
                    
                 </section>
 
@@ -94,7 +94,7 @@
                     <li class="fasele-footer">:ارتباط با ادمین</li>
                     <li class="fasele-footer">@mhze2002:telegrm</li>
                     <li class="fasele-footer">mohammad.mosan95@gmail.com:gmail</li>
-                    <li></li>
+                   
                 </ul>
            </footer>
     </main>
