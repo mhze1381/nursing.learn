@@ -57,6 +57,9 @@ border-bottom: 1px solid #FFD700;
     overflow: auto;                /* فعال کردن اسکرول افقی */
     font-size: 12x;
 }
+.slidebar-left a{
+ text-decoration: none;
+}
     
 
     

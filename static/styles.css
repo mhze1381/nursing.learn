@@ -27,14 +27,20 @@ footer{
 
 }
 footer ul{
-    padding-top: 0px,;
+    padding-top: 0px;
     margin: 0px;
 }
 footer li:first-child{
     padding: 3px;
+    text-decoration: none;
+}
+footer li{
+    text-decoration: none;
 }
 .fasele-footer{
     padding: 1px;
+    text-decoration: none;
+
 }
 .attention{
     text-align: center;
@@ -46,5 +52,8 @@ h2{
 }
 
 .kon a{
+    text-decoration: none;
+}
+indexcss a{
     text-decoration: none;
 }
