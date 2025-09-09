@@ -21,6 +21,12 @@ def nezam():
 @app.route("/learn")
 def learn():
     return render_template("learn.html")
+@app.route("/tarh")
+def tarh():
+    return render_template("tarh.html")
+@app.route("/vam")
+def vam():
+    return render_template("vam.html")
 
 
 if __name__ == "__main__":
