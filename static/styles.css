@@ -1,3 +1,6 @@
+ main{
+    background-color: #F5F5DC;
+ }
 .content{
       background-color:#F5F5DC;
       height:min-content 500px , max-content auto;
@@ -18,29 +21,57 @@
 footer{
     background-color: #F5F5DC;
     border:1px solid #ffd700;
-    text-align: right;
+    /*text-align: right;*/
     height: auto;
     height: 130px;
     padding-top: 0%;
     direction: rtl;
     font-family: 'IranYekan', 'Vazir', sans-serif;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 
 }
 footer ul{
     padding-top: 0px;
     margin: 0px;
+    list-style: none;
 }
 footer li:first-child{
     padding: 3px;
     text-decoration: none;
+    cursor: default;
+    color: black;
 }
 footer li{
     text-decoration: none;
+    display: block;
 }
 .fasele-footer{
     padding: 1px;
-    text-decoration: none;
+    text-decoration:none;
+    
+    height: auto;
 
+
+}
+.fasele-footer a {
+    text-decoration: none;
+    color: black;
+
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+li.fasele-footer{
+    text-decoration: none;
+    color: darkgrey;
+
+}
+li.fasele-footer:first-child{
+    color: aqua;
 }
 .attention{
     text-align: center;
@@ -54,7 +85,7 @@ h2{
 .kon a{
     text-decoration: none;
 }
-indexcss a{
+.indexcss a{
     text-decoration: none;
     color: aqua;
 }

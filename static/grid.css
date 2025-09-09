@@ -36,10 +36,12 @@
     border-left: 1px solid #FFD700;
     border-right: 1px solid #FFD700;
     direction: rtl;
-    text-align: right;
+    text-align: center;
     list-style-type:circle;
     font-family: 'IranYekan', 'Vazir', sans-serif;
     overflow:auto;   
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
   
     }
 .slidebar-left ul {
@@ -78,11 +80,13 @@ border-bottom: 1px solid #FFD700;
     border-left: 1px solid #FFD700;
     border-right: 1px solid #FFD700;
     direction: rtl;
-    text-align: right;
+    text-align: center;
     list-style-type:circle;
     font-family: 'IranYekan', 'Vazir', sans-serif;
     overflow:auto;   
-}    
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}   
 .kiry{
     padding-left: 2px;
     margin: 0px;
