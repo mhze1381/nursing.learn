@@ -5,18 +5,19 @@
         "left content right";
     /* فاصله بین ستون ها */
 }
-
+.responsive-img {
+    width: 100%;       /* روی دسکتاپ تصویر پرکنه فضای والد */
+    max-width: 600px;  /* حداکثر اندازه تصویر */
+    height: auto;      /* حفظ نسبت تصویر */
+}
 /* وقتی عرض صفحه کمتر از 768px بشه */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .mm {
         grid-template-columns: 1fr; /* فقط یه ستون */
         grid-template-areas: 
              "left"
             "right" /* اول محتوا بعد سایدبارها */
-            "content";
-            
-
-            
+            "content";      
     }
            
     .slidebar-left,
