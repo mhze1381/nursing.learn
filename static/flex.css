@@ -57,12 +57,13 @@ body{
   overflow-y: auto;
   width: 100%;
 
-
+justify-content: flex-end;
 }
 
 .navbar li {
   flex: 1; /* آیتم‌ها جمع نشن */ 
   color: black;
+  justify-content: flex-end;
   
 }
 .navbar a:hover{
