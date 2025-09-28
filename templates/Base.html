@@ -52,14 +52,14 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="{{ url_for('Emergency')}}">اورژانس</a></li>
+                <li><a href="{{ url_for('show_page', page='emergency')}}">اورژانس</a></li>
                 <li><a href="#">CCU-ICU</a></li>
                 <li><a href="#">داخلی-جراحی</a></li>
                 <li><a href="#">روان</a></li>
                 <li><a href="#">سوختگی</a></li>
                 <li><a href="#">دیالیز</a></li>
                 <li><a href="#">فیزیولوژی</a></li>
-                <li><a href="{{ url_for('index')}}">برگشت به صفحه ورود</a></li>
+                <li><a href="{{ url_for('show_page' , page='index')}}">برگشت به صفحه ورود</a></li>
 
             
             </ul>
@@ -68,9 +68,9 @@
 
                 <section class="slidebar-right">
                     <ul class="kiry">
-                        <li class="kossher"><a href="{{ url_for('aski')}}">منابع آسکی علوم پزشکی زاهدان</a></li>
-                        <li class="kossher"><a href="{{ url_for('nezam')}}"> دریافت شماره نظام پرستاری</a></li>
-                        <li class="kossher"><a href="{{ url_for('learn')}}">دانلود فایل ۱۵ مطلب مهم برای کار در بالین</a></li>
+                        <li class="kossher"><a href="{{ url_for('show_page' , page='aski')}}">منابع آسکی علوم پزشکی زاهدان</a></li>
+                        <li class="kossher"><a href="{{ url_for('show_page' , page='nezam')}}"> دریافت شماره نظام پرستاری</a></li>
+                        <li class="kossher"><a href="{{ url_for('show_page' , page='learn')}}">دانلود فایل ۱۵ مطلب مهم برای کار در بالین</a></li>
                     </ul>
                 </section>
 
@@ -83,9 +83,9 @@
 
                 <section class="slidebar-left">
                     <ul class="kiry">
-                        <li><a href="{{ url_for('learn')}}">هر انچه که یک پرستار باید بداند</a></li>
-                        <li><a href="{{ url_for('learn')}}">معیار برادن</a></li>
-                        <li><a href="{{ url_for('learn')}}">معیار مورس</li>
+                        <li><a href="{{ url_for('show_page' , page='learn')}}">هر انچه که یک پرستار باید بداند</a></li>
+                        <li><a href="{{ url_for('show_page' , page='learn')}}">معیار برادن</a></li>
+                        <li><a href="{{ url_for('show_page' , page='learn')}}">معیار مورس</li>
                     </ul>
                 </section>
             </div>
