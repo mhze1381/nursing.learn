@@ -98,20 +98,8 @@
                    
                 </ul>
            </footer>
-           <!-- ✅ اسکریپت ساعت پویا -->
-        <script>
-            function updateClock() {
-            const now = new Date();
-      // نمایش تاریخ و زمان به‌صورت فارسی
-            const formatted = now.toLocaleString("fa-IR");
-            document.getElementById("datetime").innerText = " " + formatted;
-            }
-
-    // یک‌بار در شروع:
-            updateClock();
-    // هر ۱۰۰۰ میلی‌ثانیه (۱ ثانیه) تکرار:
-            setInterval(updateClock, 1000);
-        </script>
+        <script src="{{ url_for('static' , filename='script.js')}}"></script>
+       
     </main>
 </body>
 </html>
