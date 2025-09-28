@@ -44,7 +44,7 @@
      <main>
         <header class="site-header">
             <div class="overlay">
-            <h1>nursing.learn</h1>
+            <h1>nursing.learn</br><span id="datetime"></span></h1>
             <p>خوش آمدید</p>
             </div>
         </header>
@@ -98,6 +98,20 @@
                    
                 </ul>
            </footer>
+           <!-- ✅ اسکریپت ساعت پویا -->
+        <script>
+            function updateClock() {
+            const now = new Date();
+      // نمایش تاریخ و زمان به‌صورت فارسی
+            const formatted = now.toLocaleString("fa-IR");
+            document.getElementById("datetime").innerText = " " + formatted;
+            }
+
+    // یک‌بار در شروع:
+            updateClock();
+    // هر ۱۰۰۰ میلی‌ثانیه (۱ ثانیه) تکرار:
+            setInterval(updateClock, 1000);
+        </script>
     </main>
 </body>
 </html>
