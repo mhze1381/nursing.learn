@@ -7,7 +7,7 @@ body{
   background-size: cover;
   background-position: center;
   width: auto;
-  height: clamp(150px, 30vh, 300px); /* توی موبایل کوچیک‌تر، توی دسکتاپ بلندتر */
+  height: clamp(150px, 20vh, 300px); /* توی موبایل کوچیک‌تر، توی دسکتاپ بلندتر */
   display: flex;
   justify-content: center;
   align-items: center;
