@@ -1,14 +1,26 @@
-<h1>Dashboard</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h1>🏥 Nursing Dashboard</h1>
+
+<p>Welcome {{ current_user.username }}</p>
+
+<a href="/logout">Logout</a>
+
+<hr>
+
+<h3>Add Patient</h3>
 
 <form method="POST" action="/add_patient">
     <input name="name" placeholder="Name">
     <input name="age" placeholder="Age">
     <input name="condition" placeholder="Condition">
-    <button>Add Patient</button>
+    <button type="submit">Add</button>
 </form>
 
-<hr>
-
-{% for p in patients %}
-    <p>{{ p.name }} | {{ p.age }} | {{ p.condition }}</p>
-{% endfor %}
+</body>
+</html>
