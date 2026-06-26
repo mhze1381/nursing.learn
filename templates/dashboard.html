@@ -1,0 +1,14 @@
+<h1>Dashboard</h1>
+
+<form method="POST" action="/add_patient">
+    <input name="name" placeholder="Name">
+    <input name="age" placeholder="Age">
+    <input name="condition" placeholder="Condition">
+    <button>Add Patient</button>
+</form>
+
+<hr>
+
+{% for p in patients %}
+    <p>{{ p.name }} | {{ p.age }} | {{ p.condition }}</p>
+{% endfor %}

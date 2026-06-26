@@ -23,6 +23,11 @@ class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(150), nullable=False)
+class Patient(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(150), nullable=False)
+    age = db.Column(db.Integer, nullable=False)
+    condition = db.Column(db.String(300))
 
 
 # 🔌 USER LOADER
@@ -44,6 +49,10 @@ def register():
     if request.method == "POST":
         username = request.form["username"]
         password = request.form["password"]
+        existing_user = User.query.filter_by(username=username).first()
+        if existing_user:
+            flash("این یوزر قبلاً ثبت شده")
+            return redirect(url_for("register"))
 
         hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
 
@@ -55,6 +64,25 @@ def register():
 
     return render_template("register.html")
 
+# dashboard
+@app.route("/dashboard")
+@login_required
+def dashboard():
+    patients = Patient.query.all()
+    return render_template("dashboard.html", patients=patients)
+# add patient
+@app.route("/add_patient", methods=["POST"])
+@login_required
+def add_patient():
+    name = request.form["name"]
+    age = request.form["age"]
+    condition = request.form["condition"]
+
+    new_patient = Patient(name=name, age=age, condition=condition)
+    db.session.add(new_patient)
+    db.session.commit()
+
+    return redirect(url_for("dashboard"))
 
 # 🔑 LOGIN
 @app.route("/login", methods=["GET", "POST"])
